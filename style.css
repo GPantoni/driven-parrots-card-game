@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    
+    padding: 40px;
+
+    background-color: #EEF9BF;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    text-align: center;
+
+    color: #75B79E;
+}
+
+@media (max-width: 613px) {
+    h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
