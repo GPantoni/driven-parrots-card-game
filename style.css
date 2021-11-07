@@ -24,11 +24,23 @@ h1 {
     color: #75B79E;
 }
 
-.placar {
+.scoreboard {
     position: fixed;
-    top: 30px;
+    bottom: 30px;
     right: 30px;
+
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    padding: 5px;
 }
+
+.timerAndMoves {
+    display: flex;
+    justify-content: space-evenly;
+
+    font-size: 20px;
+}
+
 
 .card {
     width: 117px;
@@ -56,15 +68,15 @@ h1 {
     transform-style: preserve-3d;
 }
 
-.back-face {
+.front-face {
     transform: rotateY(180deg);
 }
 
-.card:active .back-face {
+.card:active .front-face {
     transform: rotateY(0deg);
 }
 
-.card:active .front-face {
+.card:active .back-face {
     transform: rotateY(-180deg);
 }
 
