@@ -50,12 +50,25 @@ h1 {
     border-right: 1px solid #99CEA8;
 }
 
-.main {padding: 40px;}
+.main {
+    width: 90%;
+    margin: auto;
+
+    padding-top: 47px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
 .card {
     width: 117px;
     height: 146px;
+ 
     position: relative;
+
+    margin-right: 34px;
+    margin-bottom: 34px;
 }
 
 .card img {
@@ -82,11 +95,11 @@ h1 {
     transform: rotateY(180deg);
 }
 
-.card:active .front-face {
+.front-face-clicked {
     transform: rotateY(0deg);
 }
 
-.card:active .back-face {
+.back-face-clicked {
     transform: rotateY(-180deg);
 }
 
