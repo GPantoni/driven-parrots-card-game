@@ -26,21 +26,31 @@ h1 {
 
 .scoreboard {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
 
     border: 1px solid #99CEA8;
     border-radius: 5px;
-    padding: 5px;
+    padding: 2px;
+
+    font-size: 15px;
 }
 
-.timerAndMoves {
+.time, .movement {
     display: flex;
-    justify-content: space-evenly;
-
-    font-size: 20px;
+    flex-flow: column;
+    align-items: center;
 }
 
+.time {
+    margin-right: 4px;
+    padding-right: 4px;
+    border-right: 1px solid #99CEA8;
+}
+
+.main {padding: 40px;}
 
 .card {
     width: 117px;
